@@ -77,18 +77,22 @@ const SignUpForm = ()=>{
                 required 
                 onChange={handleChange} 
                 name='email' 
+                autoComplete='username'
                 value={email}/>
                <FormInput
                 label='Password'
+                type='password'
                 required 
                 onChange={handleChange} 
                 name='password'
+                autoComplete="new-password"
                 value={password}/>
                 <FormInput  
                 label='Confirm Password' 
                 type='password' 
                 required onChange={handleChange} 
-                name='confirmPassword'  
+                name='confirmPassword' 
+                autoComplete="new-password" 
                 value={confirmPassword}/>
 
                 <Button buttonType='default' type='submit' >Sign Up</Button>
