@@ -88,5 +88,5 @@ initializeApp(firebaseConfig);
 
   export const onAuthStateChangedListener = (callback) => 
     
-    onAuthStateChanged(auth,callback )
+    onAuthStateChanged(auth,callback)
 
