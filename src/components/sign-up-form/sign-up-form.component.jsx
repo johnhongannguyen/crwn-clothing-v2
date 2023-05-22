@@ -3,7 +3,7 @@ import { useState} from "react";
 import FormInput  from "../form-input/form-input.component";
 
 import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from "../../utils/firebase/firebase.utils";
-import Button from '../button/button.component';
+import Button, {BUTTON_TYPE_CLASSES} from '../button/button.component';
 
 
 
@@ -107,7 +107,7 @@ const SignUpForm = ()=>{
                 autoComplete="new-password" 
                 value={confirmPassword}/>
 
-                <Button buttonType='default' type='submit' >Sign Up</Button>
+                <Button buttonType= {BUTTON_TYPE_CLASSES.base} type='submit' >Sign Up</Button>
             </form>
         </div>
     )
